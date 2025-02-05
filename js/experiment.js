@@ -38,7 +38,7 @@ var ctx = {
 
 var loadData = function(svgEl){
   // d3.csv parses a csv file...
-  d3.csv("experiment_touchstone2_test.csv").then(function(data){
+  d3.csv("design_data.csv").then(function(data){
     // ... and turns it into a 2-dimensional array where each line is an array indexed by the column headers
     // for example, data[2]["OC"] returns the value of OC in the 3rd line
     ctx.trials = data;
